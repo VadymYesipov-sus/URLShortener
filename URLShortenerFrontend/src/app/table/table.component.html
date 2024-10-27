@@ -1,0 +1,53 @@
+<div *ngIf="authService.isLoggedIn()">
+  <div class="mb-3">
+    <h2>Create New URL</h2>
+    <form (ngSubmit)="createUrl()" #urlForm="ngForm" class="url-form">
+      <div class="mb-3" class="input-container">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Long URL"
+          [(ngModel)]="newUrl.url"
+          name="longUrl"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Create URL</button>
+    </form>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Short URL</th>
+      <th>Actions</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let url of urls">
+      <td class="table-row">
+        <a [href]="url.shortUrl" target="_blank">{{ url.shortUrl }}</a>
+      </td>
+      <td class="table-row">
+        <a [routerLink]="['/url-info', url.code]">View Details</a>
+      </td>
+      <td class="table-row">
+        <button
+          *ngIf="(url.userId && url.userId.trim() === currentUser) || isAdmin"
+          (click)="deleteUrl(url.code)"
+          class="btn btn-danger"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="isAdmin">
+  <button (click)="deleteAllUrls()" class="btn btn-danger">
+    Delete All URLs
+  </button>
+</div>

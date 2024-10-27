@@ -1,0 +1,10 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <button>Logout</button>
+    <a href="@Url.Action("CreateUrl", "Url")">Create URL</a>
+}
+else
+{
+    <!-- Show this to unauthorized users -->
+    <a href="@Url.Action("Login", "Account")">Login</a>
+}

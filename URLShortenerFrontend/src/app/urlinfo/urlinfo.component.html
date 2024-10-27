@@ -1,0 +1,16 @@
+<div *ngIf="urlDetails" class="url-details-container">
+    <h2>URL Details</h2>
+    <p><strong>Original URL:</strong> {{ urlDetails.longUrl }}</p>
+    <p><strong>Short URL:</strong> <a [href]="urlDetails.shortUrl" target="_blank">{{ urlDetails.shortUrl }}</a></p>
+    <p><strong>Code:</strong> {{ urlDetails.code }}</p>
+    <p><strong>Created On:</strong> {{ urlDetails.createdOnUtc | date: 'short' }}</p>
+    <p><strong>Created By:</strong> {{ urlDetails.userId}}</p>
+  </div>
+  
+  <div *ngIf="!urlDetails">
+    <p>Loading URL details...</p>
+  </div>
+
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>

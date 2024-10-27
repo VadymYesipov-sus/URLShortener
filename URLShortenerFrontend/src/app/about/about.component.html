@@ -1,0 +1,21 @@
+<div *ngIf="!isAdmin">
+  <h2 class="header-center">About ShortenUrl by Vadym</h2>
+  <p class="nazik">{{ aboutText }}</p>
+</div>
+
+<img src="/url.png" alt="this is how URL looks like!" class="center" />
+
+<div *ngIf="isAdmin">
+  <h2 class="header-center">
+    About ShortenUrl by Vadym (Can change since you're admin)
+  </h2>
+  <div *ngIf="!editMode">
+    <p>{{ aboutText }}</p>
+    <button (click)="toggleEdit()">Edit</button>
+  </div>
+  <div *ngIf="editMode">
+    <textarea [(ngModel)]="aboutText" rows="4" cols="50"></textarea>
+    <button (click)="saveText(aboutText)">Save</button>
+    <button (click)="toggleEdit()">Cancel</button>
+  </div>
+</div>

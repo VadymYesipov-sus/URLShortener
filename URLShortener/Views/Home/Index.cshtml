@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<p>User is @(User.Identity.IsAuthenticated ? "Authenticated" : "Not Authenticated")</p>
+@if (User.Identity.IsAuthenticated)
+{
+    <button>Logout</button>
+    <a href="@Url.Action("CreateUrl", "Url")">Create URL</a>
+}
+else
+{
+    <!-- Show this to unauthorized users -->
+    <a href="@Url.Action("Login", "Account")">Login</a>
+}

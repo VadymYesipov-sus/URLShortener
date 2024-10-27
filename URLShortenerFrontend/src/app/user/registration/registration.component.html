@@ -1,0 +1,40 @@
+<div class="container" class="login-container">
+  <div class="mb-4 h2" style="color: #4a90e2">Sign up</div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <input
+        class="form-control bg-body-secondary"
+        placeholder="Username"
+        formControlName="username"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        class="form-control bg-body-secondary"
+        placeholder="Email"
+        formControlName="email"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        class="form-control bg-body-secondary"
+        placeholder="Password"
+        type="password"
+        formControlName="password"
+      />
+    </div>
+    <div class="mb-3">
+      <input
+        class="form-control bg-body-secondary"
+        placeholder="Confirm Password"
+        type="password"
+        formControlName="confirmPassword"
+      />
+    </div>
+    <div class="mt-4">
+      <button type="submit" class="btn btn-success w-100 rounde-3">
+        Register
+      </button>
+    </div>
+  </form>
+</div>

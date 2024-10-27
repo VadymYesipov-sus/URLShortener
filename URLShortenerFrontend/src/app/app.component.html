@@ -1,0 +1,41 @@
+<div>
+  <div *ngIf="authService.isLoggedIn()" class="welcome-banner"></div>
+  <div *ngIf="!authService.isLoggedIn()" class="welcome-banner">
+    Please
+    <a class="navigation" routerLink="/login" *ngIf="!authService.isLoggedIn()"
+      >log in</a
+    >
+    to use the Shortening URL Service.
+  </div>
+  <nav>
+    <ul>
+      <button
+        (click)="logout()"
+        class="btn btn-danger"
+        *ngIf="authService.isLoggedIn()"
+      >
+        Logout
+      </button>
+      <li>
+        <a
+          class="navigation"
+          routerLink="/login"
+          *ngIf="!authService.isLoggedIn()"
+          >Login</a
+        >
+      </li>
+      <li>
+        <a
+          class="navigation"
+          routerLink="/register"
+          *ngIf="!authService.isLoggedIn()"
+          >Register</a
+        >
+      </li>
+      <li><a class="navigation" routerLink="/table">ShortURL List</a></li>
+      <li><a class="navigation" routerLink="/about">About</a></li>
+    </ul>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
