@@ -1,11 +1,11 @@
-**Project Name: URLShortener**
+# **Project Name: URLShortener**
 
 
-**Project Description**
+## **Project Description**
 
 This project is designed to enhance my skills in making API calls while also providing my first experience with the Angular framework. It integrates ASP.NET MVC for the backend and Angular for the frontend, offering a full-stack experience. The goal is to learn and improve key concepts in both technologies, focusing on building robust web applications.
 
-**Key Objectives**
+## **Key Objectives**
 
 Improve API integration: Mastering API calls and interactions within an ASP.NET MVC environment.
 
@@ -14,7 +14,7 @@ Learn Angular: My first experience with Angular, exploring how to create dynamic
 Implement Full-Stack Development: Integrating frontend requests with backend logic, ensuring seamless communication between both layers.
 
 
-**Features:**
+## **Features:**
 
 API Integration: Making API calls to retrieve data and manage resources.
 
@@ -26,25 +26,25 @@ CRUD Operations: Creating, reading, updating, and deleting entities through the 
 
 URL Shortening: URL shortening service that also provides detailed information about each shortened URL.
 
-**Technologies Used**
+## **Technologies Used**
 
-**Backend:**
+## **Backend:**
 ASP.NET MVC
 Entity Framework
 Identity Framework
 SQL Server
 SQL Server Management Studio
 
-**Frontend:**
+## **Frontend:**
 Angular 18
 TypeScript
 Authentication:
 JWT tokens
 
-**Testing:**
+## **Testing:**
 XUnit, Moq, FakeItEasy
 
-**Lessons Learned**
+## **Lessons Learned**
 
 ASP.NET MVC: Gained a solid understanding of building MVC-based web applications, working with controllers and models.
 
@@ -55,7 +55,7 @@ User Authentication: Implemented authentication using JWT tokens, Claims and Ide
 Full-Stack Integration: Successfully integrated frontend and backend components, ensuring smooth data flow between the Angular frontend and the ASP.NET MVC backend.
 
 
-**Future Improvements**
+## **Future Improvements**
 
 Add unit tests for both the frontend and backend.
 
