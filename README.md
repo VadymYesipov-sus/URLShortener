@@ -28,20 +28,20 @@ URL Shortening: URL shortening service that also provides detailed information a
 
 ## **Technologies Used**
 
-## **Backend:**
+### **Backend:**
 ASP.NET MVC
 Entity Framework
 Identity Framework
 SQL Server
 SQL Server Management Studio
 
-## **Frontend:**
+### **Frontend:**
 Angular 18
 TypeScript
 Authentication:
 JWT tokens
 
-## **Testing:**
+### **Testing:**
 XUnit, Moq, FakeItEasy
 
 ## **Lessons Learned**
