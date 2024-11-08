@@ -6,12 +6,14 @@ This project is designed to enhance my skills in making API calls while also pro
 Improve API integration: Mastering API calls and interactions within an ASP.NET MVC environment.
 Learn Angular: My first experience with Angular, exploring how to create dynamic, single-page applications.
 Implement Full-Stack Development: Integrating frontend requests with backend logic, ensuring seamless communication between both layers.
+
 **Features:**
 API Integration: Making API calls to retrieve data and manage resources.
 User Authentication: Building a basic authentication system for user registration and login.
 Role-Based Access: Differentiating functionality based on user roles (Admin vs User).
 CRUD Operations: Creating, reading, updating, and deleting entities through the backend.
 URL Shortening: URL shortening service that also provides detailed information about each shortened URL.
+
 **Technologies Used**
 **Backend:**
 ASP.NET MVC
