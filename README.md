@@ -38,7 +38,8 @@ SQL Server Management Studio
 ### **Frontend:**
 Angular 18
 TypeScript
-Authentication:
+
+### **Authentication:**
 JWT tokens
 
 ### **Testing:**
